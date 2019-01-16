@@ -32,8 +32,8 @@ class Result extends React.Component {
     }
     render(){
         return (
-            <div>
-                Result: <span>{this.doExecution()}</span>
+            <div className="result">
+                = <span>{this.doExecution()}</span>
             </div>
         )
     }

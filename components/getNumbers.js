@@ -31,7 +31,7 @@ class GetNumbers extends React.Component {
     render(){
         const {a,b,sign} = this.state;
         return (
-            <div>
+            <div className="side">
                 <NumberField num={a} onNumChange={this.changeA} label="Number 1"/>
                 <Execution a={a} b={b} sign={sign} onSignChange={this.changeSign} />
                 <NumberField num={b} onNumChange={this.changeB} label="Number 2"/>
