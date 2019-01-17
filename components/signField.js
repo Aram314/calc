@@ -31,14 +31,14 @@ class SignField extends React.Component {
     }
 
     render() {
-        const { classes } = this.props;
+        const { classes, sign } = this.props;
 
         return (
             <form className={classes.container} noValidate autoComplete="off">
                 <TextField
                     id="outlined-dense"
                     label="Sign"
-                    value={this.props.sign}
+                    value={sign}
                     onChange={this.handleChange}
                     className={classNames(classes.textField, classes.dense)}
                     margin="dense"

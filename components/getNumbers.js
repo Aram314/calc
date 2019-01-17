@@ -1,5 +1,5 @@
 import React from 'react';
-import Execution from './execution'
+import SignField from "./signField";
 import NumberField from './numberField';
 import Result from './result'
 
@@ -33,9 +33,9 @@ class GetNumbers extends React.Component {
         return (
             <div className="side">
                 <NumberField num={a} onNumChange={this.changeA} label="Number 1"/>
-                <Execution a={a} b={b} sign={sign} onSignChange={this.changeSign} />
+                <SignField sign={sign} changeSign={this.changeSign} />
                 <NumberField num={b} onNumChange={this.changeB} label="Number 2"/>
-                <Result a={a} b={b} sign={sign} onSignChange={this.changeSign} />
+                <Result a={a} b={b} sign={sign} />
             </div>
 
         )

@@ -1,9 +1,7 @@
 import React from "react";
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 class Result extends React.Component {
-    constructor(){
-        super();
-    }
     doExecution(){
         const {a, b, sign} = this.props;
         let res = '';
@@ -33,7 +31,7 @@ class Result extends React.Component {
     render(){
         return (
             <div className="result">
-                = <span>{this.doExecution()}</span>
+                <span>= </span>{this.doExecution() ? <span> {this.doExecution()}</span> : <CircularProgress  />}
             </div>
         )
     }
